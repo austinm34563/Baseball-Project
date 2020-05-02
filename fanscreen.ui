@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FanScreen</class>
+ <widget class="QDialog" name="FanScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1021</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1021</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="View">
+    <attribute name="title">
+     <string>View Team Names</string>
+    </attribute>
+    <widget class="QTableView" name="teamList">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>961</width>
+       <height>471</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="viewAllButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>560</y>
+       <width>221</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(233, 255, 219);</string>
+     </property>
+     <property name="text">
+      <string>View All (Sorted By Team Name)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="viewAmericanButton">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>560</y>
+       <width>161</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 219, 218);</string>
+     </property>
+     <property name="text">
+      <string>View American League</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="viewNatButton">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>560</y>
+       <width>161</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(204, 249, 255);</string>
+     </property>
+     <property name="text">
+      <string>View National League</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="viewAllButtonStad">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>560</y>
+       <width>241</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 251, 198);</string>
+     </property>
+     <property name="text">
+      <string>View All (Sorted By Stadium Name)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="whichButtonHitLable">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>981</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 24pt &quot;.SF NS Text&quot;;</string>
+     </property>
+     <property name="text">
+      <string>MLB Teams &amp; Stadiums Sorted By Team Name</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>View Typology</string>
+    </attribute>
+    <widget class="QTableView" name="typologyViewTable">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>60</y>
+       <width>1011</width>
+       <height>541</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="typologyLable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>981</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 24pt &quot;.SF NS Text&quot;;</string>
+     </property>
+     <property name="text">
+      <string>MLB Teams &amp; Typology Sorted By Typology</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Teams With Open Roof Type</string>
+    </attribute>
+    <widget class="QListView" name="openRoofList">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>551</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;.SF NS Text&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>5</y>
+       <width>361</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;.SF NS Text&quot;;</string>
+     </property>
+     <property name="text">
+      <string>MLB Teams With An Open Roof Type</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="openRoofNumLable">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>65</y>
+       <width>371</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;.SF NS Text&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Number of Teams with Open Roof:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Chronological Order/Seating Capacity</string>
+    </attribute>
+    <widget class="QTableView" name="capacityAndChronTable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>991</width>
+       <height>421</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chronOrderButton">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>560</y>
+       <width>181</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(197, 255, 180);</string>
+     </property>
+     <property name="text">
+      <string>Chronological Order</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="capOrderButton">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>560</y>
+       <width>113</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(204, 207, 255);</string>
+     </property>
+     <property name="text">
+      <string>Capacity</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="typeLable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>781</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;.SF NS Text&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="totalCapLable">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>490</y>
+       <width>461</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;.SF NS Text&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
